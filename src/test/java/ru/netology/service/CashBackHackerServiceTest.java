@@ -41,13 +41,15 @@ class CashBackHackerServiceTest {
     }
 
     @Test
-    void  shouldReturn1000IfAmountIs1000() {
+    void  shouldReturnZeroIfAmountIs1000() {
         CashBackHackerService service = new CashBackHackerService();
         int amount = 1000;
 
         int actual = service.remain(amount);
-        int expected = 1000;
+        int expected = 0;
 
         assertEquals(expected, actual);
     }
+
+
 }
